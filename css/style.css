@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+	background: tomato;
+	max-width: 500px;
+	min-width: 500px;
+	height: 550px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0;
+	color: #294652;
+	text-shadow: 1px 1px 5px gray;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+/*=============Card flipping=============*/
+
+.flip-card {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #025991;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: scale(1);
+}
+
+.flip-card:active {
+	transform: scale(0.97);
+	transition: transform 200ms;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front-face {
+  background-color: transperent;
+  transform: rotateY(180deg), translate(-50%, -50%);
+}
+
+.back-face {
+  backface-visibility: hidden;
+  object-fit: cover;
+}
+
+p {
+	text-align: center;
+	color: transparent;
+	background: #000000;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	text-shadow: 0px 2px 2px rgba(255,255,255,0.3);
+}
+
+a {
+	text-shadow: none;
+}
+
+.position {
+	position: absolute;
+	top: 40%;
+	left: 110%;
+	padding: 10px;
+	width: 200px;
+	height: 90px;
+	border: 1px solid;
+	text-align: center;
+}
+
+#start-btn {
+	width: 100px;
+	height: 30px;
+}
+
+.winning-message {
+	background: rgba(0,0,0,0.5);
+	max-width: 500px;
+	min-width: 500px;
+	height: 550px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.message {
+	font-size: 40px;
+	color: #FFFB00;
+	font-weight: bold;
+	text-align: center;
+}
+
+.scale {
+	transition: transform 500ms;
+	animation: timeUp linear 0.5s forwards;
+}
+
+@keyframes timeUp {
+	0% {
+		transform: scale(0) perspective(100px) rotateX(70deg);
+	}
+	50% {
+		transform: scale(1) perspective(500px) rotateX(35deg);
+	}
+	100% {
+		transform: scale(1.8) perspective(1000px) rotateX(0deg);
+	}
+}
+
+
+
+/*========================================*/
