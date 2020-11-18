@@ -6,20 +6,37 @@
 
 .main-container {
 	background: tomato;
-	max-width: 500px;
-	min-width: 500px;
-	height: 550px;
+	width: 35%;
+	/* min-width: 500px; */
+	height: 92vh;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
+/* @media (max-width: 600px) { */
+	/* .main-container { */
+		/* top: 45%; */
+		/* width: 450px; */
+		/* height: 550px; */
+	/* } */
+/* } */
+
+/* @media (max-width: 459px) { */
+	/* .main-container { */
+		/* top: 45%; */
+		/* width: 400px; */
+		/* height: 450px; */
+	/* } */
+/* } */
+
 h1 {
 	text-align: center;
 	margin: 20px 0;
 	color: #294652;
 	text-shadow: 1px 1px 5px gray;
+	font-size: 2vw;
 }
 
 .container {
@@ -35,8 +52,8 @@ h1 {
 
 .flip-card {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 22%;
+  height: 17vh;
   border: 3px solid #025991;
   cursor: pointer;
   position: relative;
@@ -83,6 +100,7 @@ p {
 	-moz-background-clip: text;
 	background-clip: text;
 	text-shadow: 0px 2px 2px rgba(255,255,255,0.3);
+	font-size: 1vw;
 }
 
 a {
@@ -94,11 +112,33 @@ a {
 	top: 40%;
 	left: 110%;
 	padding: 10px;
-	width: 200px;
+	width: 50%;
 	height: 90px;
 	border: 1px solid;
 	text-align: center;
 }
+
+/* @media (max-width: 600px) { */
+	/* .position { */
+		/* margin-top: 30px; */
+		/* top: 100%; */
+		/* left: 50%; */
+		/* transform: translateX(-50%); */
+		/* height: 75px; */
+		/* font-size: 14px; */
+	/* } */
+/* } */
+
+/* @media (max-width: 459px) { */
+	/* .position { */
+		/* margin-top: 30px; */
+		/* top: 100%; */
+		/* left: 50%; */
+		/* transform: translateX(-50%); */
+		/* height: 75px; */
+		/* font-size: 14px; */
+	/* } */
+/* } */
 
 #start-btn {
 	width: 100px;
@@ -107,9 +147,9 @@ a {
 
 .winning-message {
 	background: rgba(0,0,0,0.5);
-	max-width: 500px;
-	min-width: 500px;
-	height: 550px;
+	width: 35%;
+	/* min-width: 500px; */
+	height: 92vh;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -120,7 +160,7 @@ a {
 }
 
 .message {
-	font-size: 40px;
+	font-size: 2.5vw;
 	color: #FFFB00;
 	font-weight: bold;
 	text-align: center;
