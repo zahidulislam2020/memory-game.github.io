@@ -17,8 +17,8 @@
 
 @media (max-width: 600px) {
 	.main-container {
-	width: 50%;
-	height: 70vh;
+	width: 90%;
+	height: 50vh;
 	}
 }
 
@@ -117,16 +117,16 @@ a {
 	text-align: center;
 }
 
-/* @media (max-width: 600px) { */
-	/* .position { */
-		/* margin-top: 30px; */
-		/* top: 100%; */
-		/* left: 50%; */
-		/* transform: translateX(-50%); */
-		/* height: 75px; */
-		/* font-size: 14px; */
-	/* } */
-/* } */
+@media (max-width: 600px) {
+	.position {
+		margin-top: 30px;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 75px;
+		font-size: 14px;
+	}
+}
 
 /* @media (max-width: 459px) { */
 	/* .position { */
